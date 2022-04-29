@@ -22,8 +22,15 @@ int main(void) {
             system("clear||cls");
         } while (quantity <= 0);
 
+        if (category != 'A' && category != 'B' && category != 'C') break;
+
         sum += quantity;
         total++;
+    }
+
+    if (total < 1) {
+        printf("Não foi possível calcular a média, pois nenhum produto válido foi informado!");
+        return 0;
     }
 
     avg = (float)sum / (float)total;
