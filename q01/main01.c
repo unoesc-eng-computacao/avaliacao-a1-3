@@ -9,12 +9,13 @@ int main(void) {
 
     system("clear||cls");
 
-    while (category == 'A' || category == 'B' || category == 'C') {
+    do {
         printf("Informe a categoria: ");
         scanf(" %c%*[^\n]", &category);
         system("clear||cls");
 
         category = toupper(category);
+        if (category != 'A' && category != 'B' && category != 'C') break;
 
         do {
             printf("Informe a quantidade (maior que 0): ");
@@ -22,11 +23,9 @@ int main(void) {
             system("clear||cls");
         } while (quantity <= 0);
 
-        if (category != 'A' && category != 'B' && category != 'C') break;
-
         sum += quantity;
         total++;
-    }
+    } while (category == 'A' || category == 'B' || category == 'C');
 
     if (total < 1) {
         printf("Não foi possível calcular a média, pois nenhum produto válido foi informado!");
