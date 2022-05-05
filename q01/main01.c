@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 int main(void) {
-    char category = 'A';
+    char category;
     int sum = 0, quantity = 0, total = 0;
     float avg = 0.0;
 
