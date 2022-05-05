@@ -1,0 +1,16 @@
+A)
+    -> Na condição do WHILE foi adicionado mais uma validação, para quando a categoria for igual a C, repetir o loop;
+    -> Adicionado um IF depois da leitura da categoria, para verificar se a categoria é valida, caso não for, é efetuado o BREAK do loop.
+
+B)
+    -> Adicionado a limpeza de buffer ao ler a categoria ignorando o '\n'.
+
+C)
+    -> Adicionado um loop ao pedir a quantidade de produtos da categoria que repete enquanto a quantidade for menor que 1.
+
+D)
+    -> Adicionado um IF que verifica se a quantidade total é menor que 1, se for, informa o usuário e termina a execução do programa;
+    -> Retirado o cálulo da média para fora do loop e substituido a quantidade de produtos da última categoria pelo total para tal.
+
+E)
+    -> Adicionado conversão das variáveis do tipo INT para FLOAT ao efetuar a divisão da média.

@@ -21,7 +21,7 @@ int main(void) {
             printf("Informe a quantidade (maior que 0): ");
             scanf("%d", &quantity);
             system("clear||cls");
-        } while (quantity <= 0);
+        } while (quantity < 1);
 
         sum += quantity;
         total++;
