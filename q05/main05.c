@@ -7,13 +7,14 @@ int main(void) {
     srand(time(NULL));
     int magicNumber = rand()%10, value = 0;
 
+    system("clear||cls");
     do {
         printf("Informe um valor (0 até 10)\n-> ");
         scanf("%d", &value);
         system("clear||cls");
 
         if (magicNumber == value) {
-            printf("Certo! %d é o número mágico.\n", value);
+            printf("Certo! [%d] é o número mágico.\n", value);
             return 0;
         } else if (value > magicNumber) {
             printf("Errado, muito alto.\n\n");

@@ -14,7 +14,7 @@ int main(void) {
     response = toupper(response);
 
     if (response == 'S') {
-        printf("O paciente está saudável.");
+        printf("O paciente está saudável.\n");
         return 0;
     }
 
@@ -24,7 +24,7 @@ int main(void) {
     response = toupper(response);
 
     if (response == 'S') {
-        printf("O paciente está doente.");
+        printf("O paciente está doente.\n");
         return 0;
     }
 
@@ -33,11 +33,11 @@ int main(void) {
     system("clear||cls");
 
     if (temperature <= (float)37) {
-        printf("O paciente está saudável.");
+        printf("O paciente está saudável.\n");
         return 0;
     }
 
-    printf("O paciente está doente.");
+    printf("O paciente está doente.\n");
 
     return 0;
 }

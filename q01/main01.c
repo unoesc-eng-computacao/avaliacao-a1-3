@@ -28,13 +28,13 @@ int main(void) {
     } while (category == 'A' || category == 'B' || category == 'C');
 
     if (total < 1) {
-        printf("Não foi possível calcular a média, pois nenhum produto válido foi informado!");
+        printf("Não foi possível calcular a média, pois nenhum produto válido foi informado!\n");
         return 0;
     }
 
     avg = (float)sum / (float)total;
 
-    printf("A média dos produtos é %.2f", avg);
+    printf("A média dos produtos é %.2f\n", avg);
 
     return 0;
 }
